@@ -1,0 +1,40 @@
+.stats-strip {
+  max-width: 84%;
+  margin: 40px auto;
+  background-color: #edfcf9;
+  border-radius: 12px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-right: 1px solid rgba(0, 180, 162, 0.15);
+}
+
+.stat-box:last-child {
+  border-right: none;
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+  color: #00b4a2;
+}
+
+.stat-info h3 {
+  font-size: 1.6rem;
+  color: #051329;
+  margin: 0;
+  font-weight: 700;
+}
+
+.stat-info p {
+  font-size: 0.85rem;
+  color: #475569;
+  margin: 2px 0 0 0;
+}

@@ -1,0 +1,163 @@
+.hero-section {
+  background: radial-gradient(circle at 85% 50%, #0c2d48 0%, #051329 70%);
+  padding: 60px 8% 140px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-title .accent-text {
+  color: #00b4a2;
+}
+
+.hero-subtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-subtitle .highlight-text {
+  display: block;
+  color: #00b4a2;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  background-color: #00b4a2;
+  color: #051329;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #00d2c4;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #1e293b;
+}
+
+.play-icon {
+  font-size: 0.75rem;
+  color: #00b4a2;
+}
+
+.hero-features {
+  display: flex;
+  gap: 30px;
+}
+
+.feature-pill {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.pill-icon {
+  color: #00b4a2;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.feature-pill strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.feature-pill p {
+  color: #64748b;
+  font-size: 0.8rem;
+  margin: 2px 0 0 0;
+}
+
+/* Abstract Mock Graphics Side */
+.hero-graphic-container {
+  position: relative;
+  width: 450px;
+  height: 350px;
+}
+
+.abstract-card {
+  position: absolute;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.main-card {
+  width: 380px;
+  height: 240px;
+  top: 40px;
+  right: 0;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+}
+
+.card-header-mock {
+  padding: 15px;
+  color: #00b4a2;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.floating-card-left {
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
+  left: 20px;
+  background: radial-gradient(circle, rgba(0,180,162,0.2) 0%, transparent 80%);
+}
+
+.floating-card-right {
+  width: 80px;
+  height: 80px;
+  top: 0;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
