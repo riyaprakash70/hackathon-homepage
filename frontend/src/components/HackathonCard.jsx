@@ -4,7 +4,7 @@ import "../styles/HackathonCard.css";
 const HackathonCard = ({
   title = "Code the Future",
   description = "",
-  image = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
+  image = "https://as1.ftcdn.net/v2/jpg/05/77/04/14/1000_F_577041412_9A0YnuYIe5oSNSjWMuYwmzjw7vGqXq69.jpg",
   status = "Upcoming",
   date = "",
   participants = "",
@@ -12,14 +12,24 @@ const HackathonCard = ({
   return (
     <div className="hackathon-card">
       <div className="card-image">
-        <img src={image} alt={title} />
 
-        <span
-          className={`status ${status.toLowerCase().replace(/\s+/g, "-")}`}
-        >
-          {status}
-        </span>
-      </div>
+    <img src={image} alt={title} />
+
+    <span className={`status ${status.toLowerCase().replace(/\s+/g,"-")}`}>
+        {status}
+    </span>
+
+    <div className="card-overlay">
+
+        <h2>
+            {title.split(" ").slice(0,2).join(" ")}
+        </h2>
+
+        <span>2025</span>
+
+    </div>
+
+</div>
 
       <div className="card-body">
         <h3>{title}</h3>

@@ -1,27 +1,108 @@
-.hackathon-card {
-  width: 280px;
-  background: #ffffff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-  cursor: pointer;
+.hackathon-card{
+    width:285px;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+    transition:.35s;
+    border:1px solid #edf1f5;
 }
 
-.hackathon-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+.hackathon-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
 }
 
-.card-image {
-  position: relative;
-  height: 150px;
+.card-image{
+    position:relative;
+    height:170px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#0f172a,#312e81);
 }
 
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:.35;
+    transition:.4s;
+}
+
+.hackathon-card:hover img{
+    transform:scale(1.08);
+}
+
+.card-overlay{
+    position:absolute;
+    inset:0;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.card-overlay h2{
+    color:white;
+    font-size:32px;
+    line-height:1;
+    font-weight:800;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.card-overlay span{
+    color:#6ee7ff;
+    font-size:14px;
+    font-weight:600;
+}
+
+.status{
+    position:absolute;
+    top:14px;
+    right:14px;
+    padding:6px 12px;
+    border-radius:50px;
+    color:white;
+    font-size:11px;
+    font-weight:700;
+}
+
+.in-progress{
+    background:#16a34a;
+}
+
+.upcoming{
+    background:#2563eb;
+}
+
+.ongoing{
+    background:#0891b2;
+}
+
+.card-body{
+    padding:18px;
+}
+
+.card-body h3{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.card-body p{
+    font-size:14px;
+    color:#6b7280;
+    line-height:1.6;
+    min-height:55px;
+}
+
+.card-footer{
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    color:#475569;
+    font-size:14px;
 }
 
 .status {
